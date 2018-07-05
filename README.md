@@ -1,22 +1,22 @@
-## testing-nginx
+# testing-nginx
 A configuration file testing of nginx
 
-### Description
+## Description
 
 It's simple proxy for nginx configuration file testing.
 
 browser <----> proxy server (nginx) <----> app server (golang/ruby)
 
-### Example
+## Example
 
 See on [this commit](https://github.com/shibukk/testing-nginx/commit/50fb759b6a19eeeba27592bc9752ab978cad860a), if you track application user id at nginx.
 
-### Requirement
+## Requirement
 
 `testing-nginx` depend on docker-compose.  
 So you need installing [docker](https://docs.docker.com/install/).
 
-### Install
+## Install
 
 ```bash
 $ docker-compose up
@@ -24,9 +24,9 @@ $ docker-compose up
 
 And try [http://localhost](http://localhost).
 
-### Usage
+## Usage
 
-#### Change golang to ruby of application server
+### Change golang to ruby of application server
 
 You can change language of application server.  
 Please replace dockerfile path in `docker-compose.yml`.
@@ -39,7 +39,7 @@ Please replace dockerfile path in `docker-compose.yml`.
 +      dockerfile: ./ruby/Dockerfile
 ```
 
-### Contribution
+## Contribution
 
 1. Fork it ( http://github.com/shibukk/testing-nginx/fork )
 2. Create your feature branch ( git checkout -b my-new-feature )
@@ -47,7 +47,7 @@ Please replace dockerfile path in `docker-compose.yml`.
 4. Push to the branch ( git push origin my-new-feature )
 5. Create new Pull Request
 
-### Licence
+## Licence
 
 [MIT](https://github.com/shibukk/testing-nginx/blob/master/LICENSE)
 
