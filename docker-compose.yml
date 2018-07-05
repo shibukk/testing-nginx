@@ -1,6 +1,14 @@
 version: '3'
 
 services:
+  proxy:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
   app:
     build:
       context: .
