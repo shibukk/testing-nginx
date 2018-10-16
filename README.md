@@ -11,6 +11,8 @@ browser <----> proxy server (nginx) <----> app server (golang/ruby)
 
 See on [this commit](https://github.com/shibukk/testing-nginx/commit/50fb759b6a19eeeba27592bc9752ab978cad860a), if you track application user id at nginx.
 
+And [this commit](https://github.com/shibukk/testing-nginx/commit/02e94be), if you access static file on root.
+
 ## Requirement
 
 `testing-nginx` depend on docker-compose.  
@@ -19,6 +21,7 @@ So you need installing [docker](https://docs.docker.com/install/).
 ## Install
 
 ```bash
+$ docker-compose build
 $ docker-compose up
 ```
 
